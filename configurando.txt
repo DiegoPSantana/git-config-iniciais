@@ -1,0 +1,32 @@
+====================================================================================================
+=================================================CONFIG GIT=========================================
+
+Instalando o git:
+$ sudo apt install git
+
+Verificando a version:
+$ git --version
+
+Config iniciais:
+$ git config --global user.name seu_nome_aqui
+$ git config --global user.email seu@email.com
+
+Config o editor default:
+$ git config --global core.editor nano
+
+Para verificar as suas config:
+$ git config --list
+
+====================================================================================================
+Caso queira que as configurações sejam feitas apenas no diretório (não global) indicado, basta 
+retirar dos comandos a flag --global. Assim:
+
+$ git config user.name seu_nome_aqui
+$ git config user.email seu@email.com
+$ git config core.editor nano
+
+Para inicializar do diretorio desejado:
+$ cd /home/seu_usuário/seu_repositório
+$ git init
+
+====================================================================================================
